@@ -1,0 +1,3 @@
+- [x] Build the Mpearl homepage with the selected brand, services, packages, and no public prices.
+- [ ] Fix and check the desktop/mobile service grid and final brand details.
+- [ ] Run the tests, check the newest preview result, and commit the finished work.
