@@ -15,4 +15,4 @@ npm run build
 
 ## GitHub Pages
 
-The Pages workflow builds the site from `main` and publishes the prerendered files from `dist/client`. Set the publishing source to GitHub Actions in the repository's Pages settings.
+The Pages workflow builds the site from `main` and publishes the Vite build from `dist`. Set the publishing source to GitHub Actions in the repository's Pages settings.

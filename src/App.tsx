@@ -1,5 +1,4 @@
 import { useMemo, useState } from "react";
-import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowDown,
   ArrowRight,
@@ -31,28 +30,6 @@ import clinicPhoto from "@/assets/mpearl-clinic-hero.png";
 import clinicLogo from "@/assets/mpearl-logo.jpeg";
 import clinicSymbol from "@/assets/mpearl-symbol.jpeg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Mpearl Diagnostics | Care you can trust in Lagos" },
-      {
-        name: "description",
-        content:
-          "Explore clinical laboratory investigations, ultrasound services, and thoughtfully designed health packages at Mpearl in Surulere, Lagos.",
-      },
-      { property: "og:title", content: "Mpearl Diagnostics | Care you can trust in Lagos" },
-      {
-        property: "og:description",
-        content:
-          "Clinical laboratory investigations, ultrasound services, and health packages in Surulere, Lagos.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-  }),
-  component: HomePage,
-});
-
 const inquiryPhone = "09046403013";
 function enquiryUrl(message: string) {
   return `https://wa.me/2349046403013?text=${encodeURIComponent(message)}`;
@@ -81,7 +58,7 @@ function Brand() {
   );
 }
 
-function HomePage() {
+export default function App() {
   const [search, setSearch] = useState("");
   const [selectedGroup, setSelectedGroup] = useState("All");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
